@@ -8,7 +8,7 @@ import DetailPage from "./pages/detailPage/DetailPage";
 import CreatePokemonPage from "./pages/createPokemon/CreatePokemonPage";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://pokeapiapi-production.up.railway.app/";
 
 function App() {
   const { pathname } = useLocation();
