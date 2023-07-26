@@ -5,7 +5,7 @@ import HomePage from "./pages/home/HomePage";
 import NavbarContainer from "./components/navbar/NavbarContainer";
 import { useLocation } from "react-router-dom";
 import DetailPage from "./pages/detailPage/DetailPage";
-import CreatePokemonPage from "./pages/createPokemon/CreatePokemonPage";
+import CreatePokemonPage from "./pages/CreatePage/CreatePokemonPage";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import axios from "axios";
 axios.defaults.baseURL = "https://pokeapiapi-production.up.railway.app/";
