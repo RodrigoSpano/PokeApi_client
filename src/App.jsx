@@ -8,6 +8,7 @@ import DetailPage from "./pages/detailPage/DetailPage";
 import CreatePokemonPage from "./pages/CreatePage/CreatePokemonPage";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
 axios.defaults.baseURL = "https://pokeapiapi-production.up.railway.app/";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/pokemon/:id" element={<DetailPage />} />
         <Route path="/pokemon/create" element={<CreatePokemonPage />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to={"/error"} />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </div>
   );
